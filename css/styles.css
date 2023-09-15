@@ -369,7 +369,7 @@ footer a {
   font-weight: bold;
 }
 footer .footer-icons a {
-  margin: 2rem;
+  margin: 1rem;
 }
 footer .footer-icons a svg:hover {
   transform: scale(1.3);

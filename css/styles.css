@@ -103,6 +103,11 @@ img {
   background-color: #FD758D;
   color: white;
 }
+.header .nav-bar .icono-busqueda svg:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
 .header .nav_toggle {
   display: none;
 }

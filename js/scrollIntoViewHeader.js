@@ -1,6 +1,7 @@
 // Obtén una referencia a los enlaces del encabezado y a las secciones de imágenes
 const headerLinks = document.querySelectorAll('.nav-link');
-const portfolioSections = document.querySelectorAll('.portafolio');
+const portfolioSec = document.querySelector('.portafolio');
+const searchIcon = document.querySelector('.icono-busqueda');
 
 // Almacena el enlace activo actual
 let activeItem = null;
@@ -32,4 +33,10 @@ headerLinks.forEach(link => {
       activeItem = link;
     }
   });
+});
+
+searchIcon.addEventListener('click', () => {
+  if(portfolioSec){
+    portfolioSec.scrollIntoView({ behavior: 'smooth' });
+  }
 });

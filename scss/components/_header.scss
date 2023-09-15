@@ -42,6 +42,13 @@ img{
                 color: $blanco;
             }
         }
+        .icono-busqueda{
+            svg:hover{
+                cursor: pointer;
+                transform: scale(1.2);
+                transition: transform .2s;
+            }
+        }
     }
     .nav_toggle{
         display: none;

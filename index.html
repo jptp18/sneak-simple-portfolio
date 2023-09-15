@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneak</title>
+    <!--Icono del navegador-->
+    <link rel="shortcut icon" href="./img/logo-navegador.png" type="image/x-icon">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="imagen de prueba">
+            </a>
+        </div>
+        
+        <nav class="nav-bar" id="_items">
+            <ul class="nav_items">
+                <li class="nav-link" data-target="all">All</li>
+                <li class="nav-link" data-target="branding">Branding</li>
+                <li class="nav-link" data-target="web">Web</li>
+                <li class="nav-link" data-target="photography">Photography</li>
+                <li class="nav-link" data-target="app">App</li>
+            </ul>
+            <div class="icono-busqueda">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FD758D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                </svg>
+            </div>
+        </nav><!--Nav-bar-->
+        <div class="nav_toggle" id="_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header><!--Header-->
+    
+    <main>
+        <h1>Explore beyond horizon</h1>
+        <div class="main-text">
+            <p>Magna mundi referrentur quo, no rebum dignissim qui.</p>
+            <p>Per quodsi accusata id, agam labores</p>
+        </div>
+
+        <button id="main-button" class="button-light">View our work</button>
+    </main>
+
+    <section class="grid-section">
+        
+        <div class="options-container">
+
+            <div class="grids-icons">
+                
+                <svg id="grid-icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-grid active" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FD758D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                    <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                    <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                    <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                </svg>
+
+                <svg id="row-icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-rows" width="26" height="26" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FD758D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                    <path d="M4 12l16 0" />
+                  </svg>
+
+            </div>
+            
+            <div class="grid-options">
+                <ul class="grid-options-items">
+                    <li id="all" class="grid-options-item" data-query="all">All</li>
+                    <li id="branding" class="grid-options-item" data-query="branding">Branding</li>
+                    <li id="web" class="grid-options-item" data-query="web">Web</li>
+                    <li id="photography" class="grid-options-item" data-query="photography">Photography</li>
+                    <li id="app" class="grid-options-item" data-query="app">App</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="portafolio grid-view"></div>
+
+        <button class="button load-more">Show Me More</button>
+
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <p>© 2023 - <b>Sneak</b> All Right Reserved</p>
+        </div>
+
+        <div class="footer-icons">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="23" height="23" viewBox="0 0 24 24" stroke-width="1.5" stroke="#C2CED6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="23" height="23" viewBox="0 0 24 24" stroke-width="1.5" stroke="#C2CED6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="23" height="23" viewBox="0 0 24 24" stroke-width="1.5" stroke="#C2CED6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+                <path d="M10 9l5 3l-5 3z" />
+              </svg>
+
+
+        </div>
+    </footer>
+
+</body>
+
+<script src="./js/navBar.js"></script>
+<script src="./js/getImages.js"></script>
+<script src="./js/gridViews.js"></script>
+<script src="./js/scrollIntoViewHeader.js"></script>
+<script src="./js/scrollIntoViewMainButton.js"></script>
+
+</html>

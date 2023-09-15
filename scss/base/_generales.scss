@@ -1,0 +1,59 @@
+html{
+    box-sizing: border-box; /*Para que le margin padding no afecte el ancho de nuestros elementos*/
+    font-size: 62.5%; /*1 rem = 10px*/
+}
+*, *:before, *:after{
+    box-sizing: inherit; /*Hereda del elemento padre*/
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+p,li{
+    font-family: $fuente-principal;
+}
+h1{
+    font-family: $fuente-secundaria;
+    letter-spacing: 1rem;
+    font-weight: bold;
+}
+
+.button-light{
+    border: none;
+    margin: 0;
+
+    font-family: $fuente-secundaria;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    
+    height: 39px;
+    width: 150px;
+    text-align: center;
+    background-color: $blanco;
+    color: $principal;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button{
+    border: none;
+    margin: 0;
+
+    font-family: $fuente-secundaria;
+    letter-spacing: .1rem;
+    height: 39px;
+    width: 150px;
+    text-align: center;
+    background-color: $principal;
+    color: $blanco;
+    cursor: pointer;
+}
+
+.active-item{
+    background-color: $principal;
+    color: $blanco;
+}
+

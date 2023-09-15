@@ -1,0 +1,40 @@
+main{
+    background-color: $principal;
+    height: 770px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+h1,p{
+    color: $blanco;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0;   
+}
+.main-text{
+    font-size: 1.5rem;
+    p{
+        margin: 0;
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 800px){
+    
+    main{
+        height: 500px;
+
+        h1{
+            font-size: 2rem;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+}
